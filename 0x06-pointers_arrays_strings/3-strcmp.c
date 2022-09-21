@@ -1,4 +1,4 @@
-#include "main.h'
+#include "main.h"
 
 /**
  * _strcmp - compares two strings
@@ -15,4 +15,3 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	return (*(s1 + i) - *(s2 + i));
 }
-
