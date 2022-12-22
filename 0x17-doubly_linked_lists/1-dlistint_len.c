@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
- * print_dlistint - print a double linked list
+ * dlistint_len - get the length of nodes in a double linked list
  * @h: header of double linked list
  * Return: number of nodes
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	size_t i = 0;
 	int iniprint = 0;
@@ -21,7 +21,6 @@ size_t print_dlistint(const dlistint_t *h)
 			iniprint = 1;
 			i = 0;
 		}
-		printf("%i\n", h->n);
 		h = h->next;
 	}
 	return (i);
